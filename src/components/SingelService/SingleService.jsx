@@ -14,7 +14,7 @@ const SingleService = ({ service }) => {
             </h2>
             <p title={description}>{description.slice(0, 70)}.....</p>
             <div className="card-actions">
-               <button className="btn btn-primary">Fashion</button>
+               <button className="btn btn-primary">Checkout More</button>
             </div>
          </div>
       </div>
