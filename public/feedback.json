@@ -1,0 +1,66 @@
+[
+   {
+      "feedbackId": 1,
+      "name": "Sarah Thompson",
+      "image": "https://i.ibb.co.com/gb6yWxWv/premium-photo-1672239496290-5061cfee7ebb.jpg",
+      "feedback": "Very professional and friendly staff. My cleaning was smooth and painless. I’m happy with the overall experience.",
+      "date": "2025-04-12",
+      "rating": 5
+   },
+   {
+      "feedbackId": 2,
+      "name": "James Wilson",
+      "image": "https://i.ibb.co.com/v6dzNysh/photo-1496345875659-11f7dd282d1d.jpg",
+      "feedback": "The root canal was easier than expected. Great explanation, gentle hands, and no discomfort at all. Impressed.",
+      "date": "2025-03-28",
+      "rating": 4
+   },
+   {
+      "feedbackId": 3,
+      "name": "Emily Garcia",
+      "image": "https://i.ibb.co.com/4nbPFgbN/photo-1519085360753-af0119f7cbe7.jpg",
+      "feedback": "Amazing implant service! The results look natural. Staff made sure I was comfortable during every step of treatment.",
+      "date": "2025-02-16",
+      "rating": 5
+   },
+   {
+      "feedbackId": 4,
+      "name": "Michael Brown",
+      "image": "https://i.ibb.co.com/RK8Mrxp/photo-1508341591423-4347099e1f19.jpg",
+      "feedback": "Got a filling today. Quick and easy process, pain-free and professional. Staff was friendly and very informative too.",
+      "date": "2025-04-04",
+      "rating": 4
+   },
+   {
+      "feedbackId": 5,
+      "name": "Ava Martinez",
+      "image": "https://i.ibb.co.com/RG9RtGDV/photo-1507003211169-0a1dd7228f2d.jpg",
+      "feedback": "My daughter’s braces are working great. The orthodontist is very skilled and explains everything clearly. Great progress so far.",
+      "date": "2025-01-30",
+      "rating": 5
+   },
+   {
+      "feedbackId": 6,
+      "name": "Daniel Kim",
+      "image": "https://i.ibb.co.com/gbw5tXk5/photo-1534030347209-467a5b0ad3e6.jpg",
+      "feedback": "Came for a checkup and cleaning. Very smooth process. The clinic is clean and staff are polite and efficient.",
+      "date": "2025-04-22",
+      "rating": 4
+   },
+   {
+      "feedbackId": 7,
+      "name": "Sophia Lee",
+      "image": "https://i.ibb.co.com/ZzJH0GcZ/photo-1610088441520-4352457e7095.jpg",
+      "feedback": "Teeth whitening was amazing! My smile looks brighter already. No pain or sensitivity. Excellent service and great results overall.",
+      "date": "2025-03-10",
+      "rating": 5
+   },
+   {
+      "feedbackId": 8,
+      "name": "David Clark",
+      "image": "https://i.ibb.co.com/C3cvk72y/photo-1506794778202-cad84cf45f1d.jpg",
+      "feedback": "Had a wisdom tooth extraction. Dentist was calm and reassuring. Quick procedure and clear aftercare instructions helped recovery.",
+      "date": "2025-02-05",
+      "rating": 4
+   }
+]

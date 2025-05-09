@@ -1,0 +1,58 @@
+[
+   {
+      "id": 1,
+      "treatmentName": "Teeth Cleaning",
+      "description": "Professional teeth cleaning is a preventive procedure that removes plaque, tartar, and surface stains from your teeth. It helps prevent gum disease, cavities, and bad breath. Regular cleanings are essential for maintaining overall oral health and should be scheduled every six months for best results and long-term dental hygiene.",
+      "image": "https://i.ibb.co.com/Y40NgyLG/photo-1667133295352-ef4c83620e8e.jpg",
+      "cost": 80
+   },
+   {
+      "id": 2,
+      "treatmentName": "Tooth Filling",
+      "description": "Tooth fillings are used to repair cavities and restore the integrity of a damaged tooth. The procedure involves removing decayed portions of the tooth and filling the area with a durable material such as composite resin or amalgam. It prevents further decay and restores the tooth’s function and appearance.",
+      "image": "https://i.ibb.co.com/tp3SspS7/premium-photo-1681966962522-546f370bc98e-1.jpg",
+      "cost": 120
+   },
+   {
+      "id": 3,
+      "treatmentName": "Root Canal Treatment",
+      "description": "Root canal treatment is a procedure used to save a tooth that is severely infected or decayed. It involves removing the infected pulp tissue, cleaning and disinfecting the canal, and then sealing it. This treatment relieves pain, preserves the natural tooth, and prevents the need for extraction or implants.",
+      "image": "https://i.ibb.co.com/rG7SCrcg/premium-photo-1672922646298-3afc6c6397c9.jpg",
+      "cost": 350
+   },
+   {
+      "id": 4,
+      "treatmentName": "Tooth Extraction",
+      "description": "Tooth extraction is performed when a tooth is too damaged to be saved, often due to severe decay, infection, or impaction. The dentist carefully removes the tooth to avoid affecting surrounding tissues. Proper post-extraction care ensures healing and prevents complications like dry socket or infection from developing afterward.",
+      "image": "https://i.ibb.co.com/WWBTbmj6/photo-1606811841689-23dfddce3e95.jpg",
+      "cost": 100
+   },
+   {
+      "id": 5,
+      "treatmentName": "Dental Implants",
+      "description": "Dental implants are permanent solutions for missing teeth. A titanium post is surgically placed into the jawbone and topped with a crown to replicate a natural tooth. Implants restore chewing function, improve appearance, and prevent bone loss. They are durable and can last a lifetime with proper care and hygiene.",
+      "image": "https://i.ibb.co.com/B2GYbJnn/premium-photo-1663088767412-b10c8dc27ad1.jpg",
+      "cost": 1200
+   },
+   {
+      "id": 6,
+      "treatmentName": "Teeth Whitening",
+      "description": "Teeth whitening is a cosmetic procedure designed to remove stains and discoloration from teeth, resulting in a brighter smile. It is performed using safe bleaching agents either in-office or through take-home kits. Whitening boosts confidence and is ideal for people with healthy teeth who want a more youthful appearance.",
+      "image": "https://i.ibb.co.com/KcP5GHdk/photo-1606811971618-4486d14f3f99.jpg",
+      "cost": 200
+   },
+   {
+      "id": 7,
+      "treatmentName": "Braces & Orthodontics",
+      "description": "Orthodontic treatments like braces help correct teeth alignment, spacing issues, and bite problems. Braces use brackets and wires to gradually move teeth into position, while clear aligners offer a more discreet option. These treatments improve oral health, speech, and aesthetics, especially when started during early teenage years or earlier.",
+      "image": "https://i.ibb.co.com/mrS0cFcx/premium-photo-1675686363507-22a8d0e11b4c.jpg",
+      "cost": 2500
+   },
+   {
+      "id": 8,
+      "treatmentName": "Dental Checkup",
+      "description": "A dental checkup is a routine examination to assess the condition of your teeth, gums, and mouth. It includes visual inspection, X-rays if needed, and professional advice on oral hygiene. Regular checkups help detect problems early, prevent disease, and keep your smile healthy and functional for a lifetime.",
+      "image": "https://i.ibb.co.com/Y40NgyLG/photo-1667133295352-ef4c83620e8e.jpg",
+      "cost": 60
+   }
+]
