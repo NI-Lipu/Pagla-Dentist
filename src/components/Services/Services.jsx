@@ -8,7 +8,7 @@ const Services = () => {
 
    return (
       <div className="w-11/12 mx-auto">
-         <h2 className="text-center mt-10 mb-5 font-bold text-3xl">Services</h2>
+         <h2 className="text-center mt-10 mb-8 font-bold text-3xl">Services</h2>
          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  gap-4">
             {servicesData.slice(0, 4).map((service) => (
                <SingleService
@@ -17,9 +17,12 @@ const Services = () => {
                ></SingleService>
             ))}
          </div>
-         <Link to={'/all-treatments'} className="btn btn-primary my-5">
+         <Link to={'/all-treatments'} className="btn btn-primary my-8">
             All Services
          </Link>
+         <h2 className="text-center mt-10 mb-5 font-bold text-3xl">
+            Feedbacks
+         </h2>
          <Marquee className="mb-10" pauseOnHover="true">
             {feedbackData.map((feedback) => (
                <Feedback feedback={feedback}></Feedback>

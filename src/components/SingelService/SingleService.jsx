@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const SingleService = ({ service }) => {
-   const { cost, description, image, treatmentName } = service
+   const { id, cost, description, image, treatmentName } = service
    return (
-      <div className="card bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-md">
          <figure>
             <img src={image} className="h-36 w-full object-cover" alt="Shoes" />
          </figure>
@@ -13,9 +14,9 @@ const SingleService = ({ service }) => {
                <div className="bg-blue-200 px-2 py-1 rounded-xl">${cost}</div>
             </h2>
             <p title={description}>{description.slice(0, 70)}.....</p>
-            <div className="card-actions">
+            <NavLink to={`/detail/${id}`}>
                <button className="btn btn-primary">Checkout More</button>
-            </div>
+            </NavLink>
          </div>
       </div>
    )

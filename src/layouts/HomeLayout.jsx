@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 const HomeLayout = () => {
    return (
       <div>
-         <header>
+         <header className="mb-20">
             <Navbar></Navbar>
             <Banner></Banner>
          </header>

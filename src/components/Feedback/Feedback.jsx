@@ -1,6 +1,6 @@
 const Feedback = ({ feedback }) => {
    return (
-      <div className="card mx-8 card-compact bg-blue-100 w-72 shadow-xl mt-5">
+      <div className="card mx-8 card-compact bg-blue-100 h-96 w-72 mt-5 rounded-[140px]">
          <figure>
             <img
                src={feedback.image}
@@ -48,7 +48,7 @@ const Feedback = ({ feedback }) => {
                   {feedback.rating}
                </p>
             </div>
-            <p>
+            <p className="text-center">
                <span className="font-bold text-lg">Date: </span>
                {feedback.date}
             </p>

@@ -4,6 +4,7 @@ import HomeLayout from '../layouts/HomeLayout'
 import AllTreatments from '../pages/AllTreatments'
 import Login from '../pages/Login'
 import Services from '../components/Services/Services'
+import Details from '../pages/Details'
 
 const router = createBrowserRouter([
    {
@@ -28,6 +29,17 @@ const router = createBrowserRouter([
       path: '/all-treatments',
       element: <AllTreatments></AllTreatments>,
       loader: () => fetch('/service.json'),
+   },
+   {
+      path: '/detail/:id',
+      element: <Details></Details>,
+      loader: async ({ params }) => {
+         const allServices = await fetch('/service.json')
+         const allServicesData = await allServices.json()
+
+         const singleData = allServicesData.find((d) => d.id == params.id)
+         return singleData
+      },
    },
 
    {

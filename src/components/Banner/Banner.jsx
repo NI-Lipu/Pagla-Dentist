@@ -4,7 +4,7 @@ const Banner = () => {
       <div className="hero bg-blue-200 w-11/12 mx-auto pt-5 pb-3">
          <div className="hero-content flex-col md:flex-row-reverse">
             <div className="w-[100%]">
-               <img src={img} className=" rounded-lg shadow-2xl" />
+               <img src={img} className=" rounded-lg" />
             </div>
             <div className="">
                <h1 className="text-5xl font-bold">Pagla Dentist!</h1>
