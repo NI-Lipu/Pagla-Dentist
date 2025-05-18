@@ -6,6 +6,7 @@ import Login from '../pages/Login'
 import Services from '../components/Services/Services'
 import Details from '../pages/Details'
 import Register from '../pages/Register'
+import Profile from '../pages/Profile'
 
 const router = createBrowserRouter([
    {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
          const singleData = allServicesData.find((d) => d.id == params.id)
          return singleData
       },
+   },
+   {
+      path: '/profile',
+      element: <Profile></Profile>,
    },
 
    {
