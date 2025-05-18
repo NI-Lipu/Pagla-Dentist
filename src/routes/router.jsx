@@ -5,6 +5,7 @@ import AllTreatments from '../pages/AllTreatments'
 import Login from '../pages/Login'
 import Services from '../components/Services/Services'
 import Details from '../pages/Details'
+import Register from '../pages/Register'
 
 const router = createBrowserRouter([
    {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
    {
       path: '/login',
       element: <Login></Login>,
+   },
+   {
+      path: '/register',
+      element: <Register></Register>,
    },
 ])
 
