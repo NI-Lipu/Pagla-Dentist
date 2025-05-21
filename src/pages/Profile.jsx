@@ -23,8 +23,8 @@ const Profile = () => {
                   />
                </figure>
                <div className="card-body items-center text-center">
-                  <h2 className="card-title">{user.displayName}</h2>
-                  <p>{user.email}</p>
+                  <h2 className="card-title">{user?.displayName}</h2>
+                  <p>{user?.email}</p>
                   <div className="card-actions">
                      <button className="btn btn-primary">
                         Update Profile!
