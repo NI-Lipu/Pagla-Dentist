@@ -1,27 +1,45 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import { AuthContext } from '../provider/AuthProvider'
+import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
    const { registerWithEmailAndPassword, setUser, profileUpdate } =
       useContext(AuthContext)
+   const navigate = useNavigate()
+   const [error, setError] = useState('')
+   console.log(error)
    const handleSubmit = (e) => {
       e.preventDefault()
       const name = e.target.name.value
       const email = e.target.email.value
       const photo = e.target.photo.value
       const password = e.target.password.value
+
+      // Password validation
+      if (password.length < 6) {
+         setError('Password Should be at least 6 characters')
+         return
+      }
       registerWithEmailAndPassword(email, password)
          .then((result) => {
             const user = result.user
             setUser(user)
             profileUpdate({ displayName: name, photoURL: photo })
+            setUser(null)
+            navigate('/login')
+            setError('')
          })
          .catch((error) => {
             const errorMessage = error.message
-            console.log(errorMessage)
+            if (
+               errorMessage === 'Firebase: Error (auth/email-already-in-use).'
+            ) {
+               setError('The email has already been used.')
+               return
+            }
+            setError(errorMessage)
          })
-      console.log(name, email, photo, password)
    }
    return (
       <>
@@ -80,6 +98,13 @@ const Register = () => {
                            className="input input-bordered"
                            required
                         />
+                     </div>
+                     <div>
+                        {error && (
+                           <p className="text-red-600 text-lg font-medium">
+                              {error}
+                           </p>
+                        )}
                      </div>
                      <div className="form-control mt-6">
                         <button className="btn btn-primary w-full">

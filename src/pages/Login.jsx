@@ -2,10 +2,12 @@ import { FcGoogle } from 'react-icons/fc'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
 import { AuthContext } from '../provider/AuthProvider'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 
 const Login = () => {
-   const { loginWithGoogle, setUser } = useContext(AuthContext)
+   const { loginWithGoogle, setUser, loginWithEmailAndPassword } =
+      useContext(AuthContext)
+   const [error, setError] = useState('')
 
    // GoogleLogin
    const handleGoogleLogin = () => {
@@ -18,6 +20,24 @@ const Login = () => {
             console.log(error.code, error.message)
          })
    }
+
+   // Email And Password Login
+   const handleSubmit = (e) => {
+      e.preventDefault()
+      const email = e.target.email.value
+      const password = e.target.password.value
+      loginWithEmailAndPassword(email, password)
+         .then((result) => {
+            const user = result.user
+            setUser(user)
+            setError('')
+         })
+         .catch((error) => {
+            const err = error.message
+            setError(err)
+         })
+      // console.log(email, password)
+   }
    return (
       <>
          <Navbar></Navbar>
@@ -27,13 +47,14 @@ const Login = () => {
                   <h1 className="text-5xl font-bold mb-10">Login now!</h1>
                </div>
                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                  <form className="card-body">
+                  <form onSubmit={handleSubmit} className="card-body">
                      <div className="form-control">
                         <label className="label">
                            <span className="label-text">Email</span>
                         </label>
                         <input
                            type="email"
+                           name="email"
                            placeholder="email"
                            className="input input-bordered"
                            required
@@ -45,6 +66,7 @@ const Login = () => {
                         </label>
                         <input
                            type="password"
+                           name="password"
                            placeholder="password"
                            className="input input-bordered"
                            required
@@ -58,6 +80,11 @@ const Login = () => {
                            </a>
                         </label>
                      </div>
+                     {error && (
+                        <p className="font-medium text-red-600 text-lg">
+                           Input correct Information!
+                        </p>
+                     )}
                      <p className="font-medium">
                         New in this website? Please{'   '}
                         <Link
